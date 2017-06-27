@@ -3,7 +3,7 @@ This is a simple code for a voting app made with RethinkDB, Node.js, Express, EJ
 
 There are a lot of improvements to be made, but the core idea here is to learn how to use RethinkDB's API and how to create a real-time application.
 
-## Programming Language and libraries used to solve the problems
+## Programming Language and libraries used
 
   - Node.js v8.1.2
 
