@@ -8,6 +8,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vinícius Pereira",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinpereira/nodejs-rethinkdb-votesystem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vinpereira/nodejs-rethinkdb-votesystem/issues"
+  },
+  "homepage": "https://github.com/vinpereira/nodejs-rethinkdb-votesystem#readme",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.17.2",
