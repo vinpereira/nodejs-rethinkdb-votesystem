@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-rethinkdb-votesystem",
+  "version": "1.0.0",
+  "description": "RethinkDB and Node.js example app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinícius Pereira",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "rethinkdb": "^2.3.3",
+    "socket.io": "^2.0.3"
+  }
+}
