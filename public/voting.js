@@ -22,7 +22,7 @@ $(document).ready(() => {
             "<span class='title'>" + movie.title + "</span></li>")
     })
 
-    $('.movies').on('click', 'span.btnLike', (e) => {
+    $('.movies').on('click', 'span.btnLike', function(e) {
         let movieId = $(this).parent('div').parent('div').parent('li')[0].id;
         $.ajax({
             type: 'PUT',
@@ -30,7 +30,7 @@ $(document).ready(() => {
         });
     });
     
-    $('.movies').on('click', 'span.btnUnlike', (e) => {
+    $('.movies').on('click', 'span.btnUnlike', function(e) {
         let movieId = $(this).parent('div').parent('div').parent('li')[0].id;
         $.ajax({
             type: 'PUT',
