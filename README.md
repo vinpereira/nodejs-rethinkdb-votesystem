@@ -15,15 +15,25 @@ Main libraries:
   - rethinkdb ^2.3.3,
   - socket.io ^2.0.3
   
-### Running the code with RethinkDB in Docker
+### RethinkDB with Docker
 - Start RethinkDB container
 ```sh
 $ docker run --name rethinkdb -v "$PWD:/data" -p 28015:28015 -d rethinkdb
 ```
 
+### This code without Docker
 - Download this repository and execute `npm install` to download the dependencies
 
 - Execute `npm start` -- both database ('voting') and table ('movies') will be created
+
+- Access `localhost:3000` to use the app
+
+### This code with Docker
+- Download this repository and execute `npm install` to download the dependencies
+
+- Execute `docker build -t <your image name> .` -- this command will create a Docker image
+
+- Execute `docker run -p 3000:3000 --link rethinkdb:rethinkdb -d --name <your container name> <your image name> ` -- this command will start the container
 
 - Access `localhost:3000` to use the app
 
