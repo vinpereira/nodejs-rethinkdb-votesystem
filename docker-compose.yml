@@ -1,0 +1,23 @@
+version: '3'
+services:
+  rethinkdb:
+    image: rethinkdb
+    container_name: rethinkdb
+    ports:
+      - "8080:8080"
+      - "29015:29015"
+      - "28015:28015"
+    volumes:
+      - .:/data
+  votesystem:
+    build: .
+    image: nodejs-rethinkdb-votesystem
+    container_name: votesystem
+    ports:
+      - "3000:3000"
+    links:
+      - rethinkdb:rethinkdb
+    depends_on:
+      - rethinkdb
+    restart: unless-stopped
+  
