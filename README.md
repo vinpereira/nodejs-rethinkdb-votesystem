@@ -37,6 +37,11 @@ $ docker run --name rethinkdb -v "$PWD:/data" -p 28015:28015 -d rethinkdb
 
 - Access `localhost:3000` to use the app
 
+### Using Docker Compose
+- Execute `docker-compose up --no-recreate` -- this command will download Docker images (if required) and start both containers (RethinkDB and my app)
+
+- Access `localhost:3000` to use the app
+
 #### To access RethinkDB Web UI
 - Get Docker container IP to access RethinkDB Web UI
 ```sh
