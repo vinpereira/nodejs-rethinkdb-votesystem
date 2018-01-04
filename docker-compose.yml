@@ -19,5 +19,6 @@ services:
       - rethinkdb:rethinkdb
     depends_on:
       - rethinkdb
-    restart: unless-stopped
+    restart: on-failure
+    command: ["./wait-for-it.sh", "rethinkdb:8080", "--", "npm", "run", "docker"]
   
